@@ -16,5 +16,14 @@ namespace WinMerhabaBasic
         {
             InitializeComponent();
         }
+
+        private void btnMesaj_Click(object sender, EventArgs e)
+        {
+            string isim = txtIsim.Text;
+            string soyisim = txtSoyisim.Text;
+            DateTime dateTime = DateTime.Now;
+
+            MessageBox.Show("Merhaba " + isim + " " + soyisim + " " + "Bugün " + dateTime);
+        }
     }
 }
